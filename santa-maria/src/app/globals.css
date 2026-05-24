@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #b5954a;
+  --gold-light: #d4b06a;
+  --gold-pale: #f0e4c3;
+  --navy: #1a2340;
+  --navy-mid: #243058;
+  --marian: #2c4a8c;
+  --cream: #faf7f0;
+  --cream-dark: #f0e9d8;
+}
+
+body {
+  background: var(--cream);
+  color: #1a1508;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Prose styles para posts */
+.prose-liturgica h2 {
+  font-family: 'IM Fell English', serif;
+  font-size: 1.6rem;
+  color: var(--navy);
+  margin: 2rem 0 0.75rem;
+}
+
+.prose-liturgica h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 1.5rem 0 0.5rem;
+}
+
+.prose-liturgica p {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+  color: #3d3220;
+  font-weight: 300;
+}
+
+.prose-liturgica blockquote {
+  border-left: 3px solid var(--gold);
+  padding-left: 1.25rem;
+  font-style: italic;
+  font-family: 'IM Fell English', serif;
+  font-size: 1.15rem;
+  color: var(--navy-mid);
+  margin: 1.5rem 0;
+}
+
+/* Ornamento decorativo */
+.ornamento::before,
+.ornamento::after {
+  content: '✦';
+  color: var(--gold);
+  opacity: 0.5;
+  margin: 0 0.5rem;
+}
